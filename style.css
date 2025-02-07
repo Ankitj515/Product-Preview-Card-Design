@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    max-width: 100%;
+    
+}
+.container{
+    max-width: 43.5rem;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    margin: auto;
+    inset: 0;
+    margin-top: 100px;
+    border-radius: 0.8rem;
+    margin-bottom: 100px;
+    
+}
+.product-img{
+    width: 50%;
+    object-fit: cover;
+    border-radius: 0.8rem 0 0 0.8rem;
+}
+.product-img-mob{
+    display: none;
+}
+.product-info{
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.cat-title{
+    
+    font-size: .9rem;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    
+}
+.prod-title{
+    margin-bottom: 1.4rem;
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: hsl(212, 21%, 14%);
+
+}
+.prod-disc{
+    font-family: Montserrat;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+    letter-spacing: .05rem;
+    margin-bottom: 1.4rem;   
+}
+.price{
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-left: .2rem;
+    margin-bottom: 1.7rem;
+}
+.old-price{
+    color: hsl(228, 12%, 48%);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-left: 1.2rem;
+       
+}
+
+.submit button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-family: Montserrat;
+    font-weight: 500;
+    border-radius: .4rem;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(156, 40%, 21%);
+}
+.icon{
+    margin-right: .5rem;
+}
+@media screen and (max-width: 375px) {
+    
+    .container{
+    flex-direction: column;
+    max-width: 90%;
+    height: auto;
+    }
+    
+    .product-img{
+        display: none;
+    }
+    .product-img-mob{
+        display: block;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+    .product-info{
+        width: 100%;
+        padding: 1.5rem;
+        
+    }
+    .cat-title{
+        font-size: .7rem;
+        margin-bottom: .5rem;
+    }
+    .prod-title{
+        font-size: 1.8rem;
+    }
+    .prod-disc{
+        font-size: .8rem;
+    }  
+     .old-price{
+        font-size: .8rem;
+     }   
+    
+}
